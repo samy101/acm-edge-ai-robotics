@@ -44,8 +44,17 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--primary);
+            border: 4px solid #afadad; 
             margin-bottom: 15px;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        .speaker-card:hover img {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+        .speaker-card a {
+            text-decoration: none;
+            outline: none;
         }
         .topic-icon {
             font-size: 2.5rem;
